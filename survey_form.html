@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles3.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form with the required information.</p>
+        <form id="survey-form" method="post">
+            <fieldset>
+                <label for="name" id="name-label">Enter your name:<input type="text" id="name" placeholder="fullname" required></label> 
+                <label for="email" id="email-label">Enter your email: <input type="email" id="email" placeholder="personal email" required></label>
+                <label for="number" id="number-label">Enter your age: <input type="number" id="number" min="18" max="120" placeholder="age"></label>
+            </fieldset>
+            <fieldset>
+                <label for="grades">Are you satisfied with your midterms grade?</label>
+                <select name="grades" id="dropdown">
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="student">Student<input type="radio" id="student" class="inline" name="s/t" value="first" checked></label>
+                <label for="teacher">Teacher<input type="radio" class="inline" id="teacher" name="s/t" value="second"></label>
+            </fieldset>
+            <fieldset>
+                <p>Choose One</p>
+                <label for="">New Student <input type="checkbox" name="n/o" id="new" value="new" class="inline"></label>
+                <label for="">Old Student <input type="checkbox" name="n/o" id="old" value="old" class="inline"></label>
+            </fieldset>
+            <fieldset>
+                <textarea name="feedback" id="" placeholder="Please put your feedback or comment here"></textarea>
+            </fieldset>
+            <label for="submission">Click Submit if you're done! Thank you</label>
+            <input type="submit" name="SUBMIT" id="submit">
+        </form>
+    </body>
+</html>
